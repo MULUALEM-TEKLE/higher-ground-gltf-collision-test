@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+	background-color: #000;
+	color: #fff;
+	font-family: Monospace;
+	font-size: 13px;
+	line-height: 24px;
+	overscroll-behavior: none;
+    -webkit-user-select: none;    
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+#blocker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    color: white;
+}
+
+#instructions {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 30px;
+    display: none;
+}
+
+.health {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#health_out {
+    width: 410px;
+    height: 45px;
+    background-color: black;
+    border-radius: 15px;
+    top: calc(100% - 65px);
+}
+
+#health {
+    width: 400px;
+    height: 35px;
+    background-color: #B3B3B3;
+    border-radius: 10px;
+    top: calc(100% - 60px);
+}
+
+.stamina {
+    position: absolute;
+}
+
+#stamina_out {
+    width: 110px;
+    height: 40px;
+    background-color: black;
+    bottom: 20px;
+    left: 50px;
+    border-radius: 15px;
+}
+
+#stamina {
+    width: 100px;
+    height: 30px;
+    background-color: lightgreen;
+    bottom: 25px;
+    left: 55px;
+    border-radius: 10px;
+}
+
+#staminaTxt {
+    position: absolute;
+    bottom: 28px;
+    left: 62px;
+    font-size: 20px;
+    color: black;
+}
+
+#ammoLoaded {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#ammoRefills {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 75px;
+    width: 55px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#ammoRefillsVal {
+    margin-top: 4px;
+}
+
+#ammoLoadedVal {
+    margin-top: 11px;
+}
+
+#weaponsScene {
+    position: absolute;
+    top: 0;
+}
+
+.slot {
+    position: absolute;
+    right: 20px;
+    width: 120px;
+    height: 50px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.slot:nth-child(1){
+    border-radius: 10px 10px 0 0;
+}
+
+.slot:nth-child(4){
+    border-radius: 0 0 10px 10px;
+}
+
+.slot img {
+    position: absolute;
+    width: 60px;
+    right: 60px;
+    top: 0;
+}
+
+.slot p:nth-child(1) {
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+#primary {
+    top: 20px;
+}
+
+#secondary {
+    top: 70px;
+}
+
+#melee {
+    top: 120px;
+}
+
+#explosives {
+    top: 170px;
+}
+
+.ammoT {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 230px;
+    text-align: center;
+}
+
+#purple {
+    background-color: rgb(134, 95, 237);
+    color: white;
+    right: 115px;
+}
+
+#yellow {
+    background-color: rgb(246, 195, 59);
+    color: black;
+    right: 83.4px;
+}
+
+#red {
+    background-color: rgb(234, 52, 102);
+    color: white;
+    right: 51.8px;
+}
+
+#green {
+    background-color: rgb(56, 206, 161);
+    color: black;
+    right: 20px;
+}
+
+#reload {
+    position: absolute;
+    top: 0;
+}
